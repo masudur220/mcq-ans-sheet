@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+*{margin: 0; padding: 0; box-sizing: border-box; user-select: none;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none;    /* Firefox */
+      -ms-user-select: none;     /* IE10+ */}
+.area{width: 100%; height: 100vh; margin: auto; padding:20px 30px;}
+.row{width: 250px; height: 100%;}
+        .field{ display: flex;}
+
+        .circle{width:20px; height: 20px; text-align: center;border: 1px solid grey; border-radius: 100%;margin-left: 10px; padding 3px}
+        .sl{border: 1px solid transparent}
+input{width: 500px; height: 25px; border: none; font-size: 14px; outline: none; Padding: 2px 20px}
+#btn{background: darkgrey; color: white; cursor: pointer;}
+#btn:hover {background: grey}
+    </style>
+</head>
+<body>
+
+<div class="area">
+    <h2 style="text-align: center">MCQ ANSWER SHEET</h2><br>
+    <div id="inputsys">
+    <input type="text" placeholder="Type your name..." id = "name">
+    <input type="email" placeholder="Your Email..." id = "email">
+    <input type="text" placeholder="Your Id..." id = "id">
+    <input id="btn" type="button" value="SUBMIT" onclick="submit();" style="width: 100px;"> 
+    </div>
+    <p id="description">this is a text</p>
+<script>
+    let texts = "Candidate Name is: ";
+    let desp = document.getElementById('description');
+        desp.style.display ="none";
+    let name = document.getElementById('name');
+    let email = document.getElementById('email');
+    let id = document.getElementById('id');
+
+    function submit() {
+
+    document.getElementById('inputsys').style.display = 'none';
+    desp.style.display ="block";
+    texts = texts + "<b>";
+    texts = texts + name.value;
+    texts = texts + "</b>";
+    texts = texts + "; ID no. is: ";
+    texts = texts + "<b>";
+    texts = texts + id.value;
+    texts = texts + "</b>";
+    texts = texts + "; Email Address is: ";
+    texts = texts + "<b>";
+    texts = texts + email.value;
+    texts = texts + "</b>";
+    desp.innerHTML = texts;
+}
+
+</script>
+<hr><br>
+
+<div style="display:flex;">
+<div class="row-1 row">
+    <div class="field">
+        <div class="circle sl">01.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">02.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">03.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">04.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">05.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">06.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">07.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">08.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">09.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">10.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+                
+    <div class="field">
+        <div class="circle sl">11.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">12.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">13.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">14.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">15.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+</div>
+
+
+
+
+
+<div class="row-2 row">
+    <div class="field">
+        <div class="circle sl">16.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">17.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">18.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">19.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">20.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+  
+    <div class="field">
+        <div class="circle sl">21.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">22.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">23.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">24.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">25.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">26.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">27.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">28.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">29.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">30.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+</div>
+
+
+
+
+
+
+<div class="row-3 row">  
+    <div class="field">
+        <div class="circle sl">31.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">32.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">33.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">34.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">35.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">36.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">37.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">38.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">39.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">40.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+  
+    <div class="field">
+        <div class="circle sl">41.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">42.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">43.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">44.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">45.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+</div>
+
+
+
+
+
+
+<div class="row-4 row">
+    <div class="field">
+        <div class="circle sl">46.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">47.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">48.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">49.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">50.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+  
+    <div class="field">
+        <div class="circle sl">51.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">52.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">53.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">54.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">55.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">56.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">57.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">58.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">59.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">60.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+</div>
+
+
+
+
+
+
+<div class="row-5 row"> 
+    <div class="field">
+        <div class="circle sl">61.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">62.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">63.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">64.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">65.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">66.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">67.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">68.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">69.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">70.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+  
+    <div class="field">
+        <div class="circle sl">71.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">72.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">73.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">74.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">75.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+</div>
+
+
+
+
+
+
+<div class="row-6 row">
+    <div class="field">
+        <div class="circle sl">76.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">77.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">78.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">79.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">80.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+  
+    <div class="field">
+        <div class="circle sl">81.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">82.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">83.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">84.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">85.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">86.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">87.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">88.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">89.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">90.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+  </div>
+
+
+
+
+<div class="row-7 row">
+    <div class="field">
+        <div class="circle sl">91.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+ 
+    <div class="field">
+        <div class="circle sl">92.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">93.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">94.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">95.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">96.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">97.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">98.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">99.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+
+    <div class="field">
+        <div class="circle sl">100.</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'">A</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >B</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >C</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >D</div>
+        <div class="circle" onclick="this.style.background = 'green'; this.style.color ='white'" ondblclick="this.style.background = 'white'; this.style.color ='black'" >E</div>
+    </div><br> <br>
+</div>  
+
+  
+</div>
+<script>
+    
+
+</script>
+</body>
